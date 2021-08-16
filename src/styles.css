@@ -1,0 +1,67 @@
+h1 {
+  color: blue;
+  padding: 20px;
+}
+
+.city {
+  color: orangered;
+}
+.ams {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+.cloud {
+  display: block;
+  font-size: 100px;
+}
+.todayTemperature {
+  font-size: 50px;
+  font-weight: bolder;
+}
+.units {
+  font-size: 35px;
+}
+.todayDate {
+  font-size: 20px;
+}
+.search {
+  position: absolute;
+  top: 30px;
+  left: 600px;
+}
+.citiestext {
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 620px;
+  font-weight: bold;
+}
+.citiesphoto {
+  position: absolute;
+  top: 130px;
+  left: 600px;
+}
+.rounded-2 {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+.weekly {
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 10px;
+  bottom: 30px;
+}
+.border-danger {
+  padding: 10px;
+  position: relative;
+  top: 10px;
+}
+
+.Today {
+  border: solid 4px red;
+  border-radius: 10px;
+  padding: 20px 16px 24px 16px;
+  margin: 10px 50px 10px 50px;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+}

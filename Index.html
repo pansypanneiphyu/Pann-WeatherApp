@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="Today">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h1>Current City</h1>
+
+            <div class="col-6"><h3 class = "city" id="cityhead">Amsterdam,NL</h3></div>
+            <div class="col-6">
+              <img
+                src="Images/amsterdam.jpeg"
+                alt="amsterdam"
+                class="ams"
+                width="200px"
+              />
+            </div>
+
+            <br />
+            <div class="col-6"><h1 class="cloud">🌦</h1></div>
+            <br />
+            <div class="left">
+              <span class="todayTemperature" id="todayTemperature">19</span>                
+              <span class="units"
+                   id="celsius"> °C
+                </span>
+            <div class="col-6"><p class="todayDate">Monday, 14:00</p></div>
+            <br />
+            <div class="col-6">
+              <ul style="list-style-type: none" class="todayinfo">
+                <li>☁️ Mostly Cloudy</li>
+                <li>☔︎ Rain - 20%</li>
+                <li>💨 Wind - 1km/h</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="citysearch">
+      <div class="container search">
+        <div class="col-6">
+          <form id="search-form">
+            <input
+              type="text"
+              placeholder="🔎 Search for City"
+              autocomplete="off"
+              autofocus="on"
+              id="search-text-input"
+            />
+            <button type="button" class="btn btn-primary">Search</button>
+          </form>
+        </div>
+      </div>
+      <div class="container citiestext">
+        <div class="row">
+          <div class="col-2">Paris</div>
+          <div class="col-2">Rome</div>
+          <div class="col-2">Berlin</div>
+          <div class="col-2">London</div>
+        </div>
+      </div>
+    </div>
+    <div class="container citiesphoto">
+      <div class="row">
+        <div class="col-2">
+          <img
+            src="Images/Paris.jpeg"
+            class="rounded-2"
+            alt="paris"
+            width="100px"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            src="Images/rome.jpeg"
+            class="rounded-2"
+            alt="rome"
+            width="100px"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            src="Images/berlin.jpeg"
+            class="rounded-2"
+            alt="berlin"
+            width="100px"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            src="Images/London.jpeg"
+            class="rounded-2"
+            alt="london"
+            width="100px"
+          />
+        </div>
+      </div>
+      <br />
+      <div class="col-6"><h3>Week</h3></div>
+      <br />
+      <div class="week">
+        <div class="container weekly">
+          <div class="row">
+            <div class="col-1">Tue</div>
+            <div class="col-1">Wed</div>
+            <div class="col-1">Thu</div>
+            <div class="col-1">Fri</div>
+            <div class="col-1">Sat</div>
+            <div class="col-1">Sun</div>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-1">
+            <span class="border border-danger">🌤 22ºC</span>
+          </div>
+          <div class="col-1">
+            <span class="border border-danger">☀️ 24ºC</span>
+          </div>
+
+          <div class="col-1">
+            <span class="border border-danger">☁️ 20ºC</span>
+          </div>
+
+          <div class="col-1">
+            <span class="border border-danger">🌦 22ºC</span>
+          </div>
+          <div class="col-1">
+            <span class="border border-danger">🌧 19ºC</span>
+          </div>
+          <div class="col-1">
+            <span class="border border-danger">⛈ 19ºC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
