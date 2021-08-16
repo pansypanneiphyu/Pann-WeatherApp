@@ -57,6 +57,11 @@ h1 {
   position: relative;
   top: 10px;
 }
+small {
+  display: block;
+  color: red;
+  margin: 10px;
+}
 
 .Today {
   border: solid 4px red;
