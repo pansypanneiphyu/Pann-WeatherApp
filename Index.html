@@ -16,143 +16,171 @@
   </head>
 
   <body>
-    <div class="Today">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <h1>Current City</h1>
-
-            <div class="col-6"><h3 class = "city" id="cityhead">Amsterdam,NL</h3></div>
-            <div class="col-6">
-              <img
-                src="Images/amsterdam.jpeg"
-                alt="amsterdam"
-                class="ams"
-                width="200px"
+    <div class="container">
+      <div class="weather-app">
+        <form id="search-form" class="mb-3">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Search a city"
+                class="form-control"
+                id="city-input"
+                autocomplete="off"
               />
             </div>
-
-            <br />
-            <div class="col-6"><h1 class="cloud">🌦</h1></div>
-            <br />
-            <div class="left">
-              <span class="todayTemperature" id="todayTemperature">19</span>                
-              <span class="units"
-                   id="celsius"> °C
-                </span>
-            <div class="col-6"><p class="todayDate">Monday, 14:00</p></div>
-            <br />
-            <div class="col-6">
-              <ul style="list-style-type: none" class="todayinfo">
-                <li>☁️ Mostly Cloudy</li>
-                <li>☔︎ Rain - 20%</li>
-                <li>💨 Wind - 1km/h</li>
-              </ul>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="search"
+                class="btn btn-primary w-100"
+              />
             </div>
+          </div>
+        </form>
+
+        <div class="overview">
+          <h1 id="city">Amsterdam</h1>
+          <ul>
+            <li><span id="date"></span></li>
+            <li id="description">Clear</li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <div class="citysearch">
-      <div class="container search">
+
         <div class="col-6">
-          <form id="search-form">
-            <input
-              type="text"
-              placeholder="🔎 Search for City"
-              autocomplete="off"
-              autofocus="on"
-              id="search-text-input"
-            />
-            <button type="button" class="btn btn-primary">Search</button>
-          </form>
+          <img
+            src="Images/amsterdam.jpeg"
+            alt="amsterdam"
+            class="ams"
+            width="200px"
+          />
+        </div>
+
+        <div class="row">
+          <div class="col-9">
+            <div class="cloudyfix weather-temperature">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                id="icon"
+                class="float-left"
+              />
+              <div class="float-left">
+                <strong id="temperature">12</strong>
+                <span class="units">
+                  <a href="#" id="celsius-link"> ºC </a> |
+                  <a href="#" id="fahrenheit-link">ºF</a></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Precipitation : 0%</li>
+              <li>Humidity:<span id="humidity"></span>%</li>
+              <li>Wind:<span id="wind"></span> km/h</li>
+            </ul>
+          </div>
         </div>
       </div>
+
       <div class="container citiestext">
         <div class="row">
-          <div class="col-2">Paris</div>
-          <div class="col-2">Rome</div>
-          <div class="col-2">Berlin</div>
-          <div class="col-2">London</div>
+          <div class="col-1">Paris</div>
+          <div class="col-1">Rome</div>
+          <div class="col-1">Berlin</div>
+          <div class="col-1">London</div>
         </div>
       </div>
-    </div>
-    <div class="container citiesphoto">
-      <div class="row">
-        <div class="col-2">
-          <img
-            src="Images/Paris.jpeg"
-            class="rounded-2"
-            alt="paris"
-            width="100px"
-          />
-        </div>
-        <div class="col-2">
-          <img
-            src="Images/rome.jpeg"
-            class="rounded-2"
-            alt="rome"
-            width="100px"
-          />
-        </div>
-        <div class="col-2">
-          <img
-            src="Images/berlin.jpeg"
-            class="rounded-2"
-            alt="berlin"
-            width="100px"
-          />
-        </div>
-        <div class="col-2">
-          <img
-            src="Images/London.jpeg"
-            class="rounded-2"
-            alt="london"
-            width="100px"
-          />
-        </div>
-      </div>
-      <br />
-      <div class="col-6"><h3>Week</h3></div>
-      <br />
-      <div class="week">
-        <div class="container weekly">
-          <div class="row">
-            <div class="col-1">Tue</div>
-            <div class="col-1">Wed</div>
-            <div class="col-1">Thu</div>
-            <div class="col-1">Fri</div>
-            <div class="col-1">Sat</div>
-            <div class="col-1">Sun</div>
+
+      <div class="container citiesphoto">
+        <div class="row">
+          <div class="col-1">
+            <img
+              src="Images/Paris.jpeg"
+              class="rounded-2"
+              alt="paris"
+              width="80px"
+            />
+          </div>
+          <div class="col-1">
+            <img
+              src="Images/rome.jpeg"
+              class="rounded-2"
+              alt="rome"
+              width="80px"
+            />
+          </div>
+          <div class="col-1">
+            <img
+              src="Images/berlin.jpeg"
+              class="rounded-2"
+              alt="berlin"
+              width="80px"
+            />
+          </div>
+          <div class="col-1">
+            <img
+              src="Images/London.jpeg"
+              class="rounded-2"
+              alt="london"
+              width="80px"
+            />
           </div>
         </div>
         <br />
-        <div class="row">
-          <div class="col-1">
-            <span class="border border-danger">🌤 22ºC</span>
+        <div class="col-6"><h3>Week</h3></div>
+        <br />
+        <div class="week">
+          <div class="container weekly">
+            <div class="row">
+              <div class="col-1">Tue</div>
+              <div class="col-1">Wed</div>
+              <div class="col-1">Thu</div>
+              <div class="col-1">Fri</div>
+              <div class="col-1">Sat</div>
+              <div class="col-1">Sun</div>
+            </div>
           </div>
-          <div class="col-1">
-            <span class="border border-danger">☀️ 24ºC</span>
-          </div>
+          <br />
+          <div class="row">
+            <div class="col-1">
+              <span class="border border-danger">🌤 22ºC</span>
+            </div>
+            <div class="col-1">
+              <span class="border border-danger">☀️ 24ºC</span>
+            </div>
 
-          <div class="col-1">
-            <span class="border border-danger">☁️ 20ºC</span>
-          </div>
+            <div class="col-1">
+              <span class="border border-danger">☁️ 20ºC</span>
+            </div>
 
-          <div class="col-1">
-            <span class="border border-danger">🌦 22ºC</span>
-          </div>
-          <div class="col-1">
-            <span class="border border-danger">🌧 19ºC</span>
-          </div>
-          <div class="col-1">
-            <span class="border border-danger">⛈ 19ºC</span>
+            <div class="col-1">
+              <span class="border border-danger">🌦 22ºC</span>
+            </div>
+            <div class="col-1">
+              <span class="border border-danger">🌧 19ºC</span>
+            </div>
+            <div class="col-1">
+              <span class="border border-danger">⛈ 19ºC</span>
+            </div>
           </div>
         </div>
+        <footer>
+          This project was coded by Pann with
+          <a href="https://www.shecodes.io" target="blank">Shecodes</a>. Open
+          sourced on
+          <a
+            href="https://github.com/pansypanneiphyu/WeatherApp-withteacher"
+            target="blank"
+            >Github</a
+          >
+          and hosted on
+          <a href="https://dazzling-noyce-17ec22.netlify.app/" target="blank"
+            >Netlify</a
+          >
+        </footer>
       </div>
     </div>
-    <small>
-    <a href="https://github.com/pansypanneiphyu/Pann-WeatherApp" target="blank">Open-source code</a> by Pann Ei Phyu
-    </small>
     <script src="src/script.js"></script>
   </body>
 </html>
