@@ -33,11 +33,13 @@ footer {
   margin: 70px auto;
 }
 .weather-app {
+  background-color: rgb(233, 230, 184);
   max-width: 1000px;
   margin: 10px auto;
   padding: 10px;
   border: 1px solid #f48d8d;
   border-radius: 7px;
+  box-shadow: 5px 2px 2px rgb(62, 44, 44);
 }
 .overview {
   margin-bottom: 20px;
@@ -98,12 +100,4 @@ footer {
   padding: 10px;
   position: relative;
   top: 10px;
-}
-
-.Today {
-  border: solid 4px red;
-  border-radius: 10px;
-  padding: 20px 16px 24px 16px;
-  margin: 10px 50px 10px 50px;
-  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
 }
