@@ -30,18 +30,22 @@ li::first-letter {
 }
 
 footer {
-  max-width: 600px;
-  margin: 30px auto;
+  margin: 70px auto;
 }
 .weather-app {
   max-width: 1000px;
   margin: 10px auto;
   padding: 10px;
-  border: 1px solid #dadde1;
-  border-radius: 5px;
+  border: 1px solid #f48d8d;
+  border-radius: 7px;
 }
 .overview {
   margin-bottom: 20px;
+}
+
+.ams {
+  border: 2px solid red;
+  border-radius: 5px;
 }
 
 .weather-temperature img {
@@ -62,13 +66,6 @@ footer {
   top: -32px;
 }
 
-.todayTemperature {
-  font-size: 50px;
-  font-weight: bolder;
-}
-.todayDate {
-  font-size: 20px;
-}
 .search {
   position: absolute;
   top: 30px;
@@ -101,11 +98,6 @@ footer {
   padding: 10px;
   position: relative;
   top: 10px;
-}
-small {
-  display: block;
-  color: red;
-  margin: 10px;
 }
 
 .Today {
